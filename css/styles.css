@@ -24,6 +24,19 @@ body {
   height: 30px;
 }
 
+.button:hover {
+  background-color: #9ad4ea;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #4d99dc;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+
+
 h1 {
   color: blue;
   height: 50px;

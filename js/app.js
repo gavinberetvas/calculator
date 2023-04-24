@@ -1,4 +1,3 @@
-
 let numbersArray = [];
 let numbersArray2 = [];
 let display = 0;
@@ -22,14 +21,12 @@ document.getElementById("equals").addEventListener("click", function () {
   test();
 });
 
-
-//TODO MAKE OPERATE FUNCTION WORK WHEN NUMBERS ARRAY 2 IS FILLED TO CHAIN FUNCTIONS
 document.getElementById("plus").addEventListener("click", function () {
   if (operator == null) {
     operate("plus");
   } else if (operator != null) {
-    
-    math("plus");
+    math(operator);
+    operator = "plus";
     numbersArray2 = [];
     numbersArray2.push(answer);
     document.getElementById("second-screen").innerHTML = `${answer}`;
@@ -39,27 +36,53 @@ document.getElementById("plus").addEventListener("click", function () {
 });
 
 document.getElementById("minus").addEventListener("click", function () {
-  operator == null ? operate("minus") : undefined;
+  if (operator == null) {
+    operate("minus");
+  } else if (operator != null) {
+    math(operator);
+    operator = "minus";
+    numbersArray2 = [];
+    numbersArray2.push(answer);
+    document.getElementById("second-screen").innerHTML = `${answer}`;
+    document.getElementById("screen").innerHTML = ``;
+    numbersArray = [];
+  }
 });
 
 document.getElementById("times").addEventListener("click", function () {
-  operator == null ? operate("times") : undefined;
+  if (operator == null) {
+    operate("times");
+  } else if (operator != null) {
+    math(times);
+    operator = "times";
+    numbersArray2 = [];
+    numbersArray2.push(answer);
+    document.getElementById("second-screen").innerHTML = `${answer}`;
+    document.getElementById("screen").innerHTML = ``;
+    numbersArray = [];
+  }
 });
 
 document.getElementById("div").addEventListener("click", function () {
-  operator == null ? operate("div") : undefined;
+  if (operator == null) {
+    operate("div");
+  } else if (operator != null) {
+    math(div);
+    operator = "div";
+    numbersArray2 = [];
+    numbersArray2.push(answer);
+    document.getElementById("second-screen").innerHTML = `${answer}`;
+    document.getElementById("screen").innerHTML = ``;
+    numbersArray = [];
+  }
 });
 
 function operate(op) {
-  //if (operator != null) {
-
-  //} else
   document.getElementById("second-screen").innerHTML = `${display}`;
   document.getElementById("screen").innerHTML = ``;
   numbersArray2 = numbersArray;
   numbersArray = [];
   operator = op;
-
 }
 
 function math() {
@@ -83,7 +106,7 @@ function math() {
     }
     document.getElementById("screen").innerHTML = answer.toFixed(2);
   } else {
-   blank();
+    blank();
   }
 }
 
@@ -94,7 +117,6 @@ function test() {
   operator = null;
   answer = 0;
 }
-
 
 function blank() {
   document.getElementById("second-screen").innerHTML = ``;
