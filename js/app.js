@@ -1,7 +1,8 @@
+
 let numbersArray = [];
 let numbersArray2 = [];
 let display = 0;
-let operator = 0;
+let operator = null;
 let answer = 0;
 
 function addToNumbersArray(number) {
@@ -17,36 +18,51 @@ for (let i = 0; i < 10; i++) {
 }
 
 document.getElementById("equals").addEventListener("click", function () {
-  equals();
+  math();
+  test();
 });
 
 
 //TODO MAKE OPERATE FUNCTION WORK WHEN NUMBERS ARRAY 2 IS FILLED TO CHAIN FUNCTIONS
 document.getElementById("plus").addEventListener("click", function () {
-  operator == 0 ? operate("plus") : undefined;
+  if (operator == null) {
+    operate("plus");
+  } else if (operator != null) {
+    
+    math("plus");
+    numbersArray2 = [];
+    numbersArray2.push(answer);
+    document.getElementById("second-screen").innerHTML = `${answer}`;
+    document.getElementById("screen").innerHTML = ``;
+    numbersArray = [];
+  }
 });
 
 document.getElementById("minus").addEventListener("click", function () {
-  operator == 0 ? operate("minus") : undefined;
+  operator == null ? operate("minus") : undefined;
 });
 
 document.getElementById("times").addEventListener("click", function () {
-  operator == 0 ? operate("times") : undefined;
+  operator == null ? operate("times") : undefined;
 });
 
 document.getElementById("div").addEventListener("click", function () {
-  operator == 0 ? operate("div") : undefined;
+  operator == null ? operate("div") : undefined;
 });
 
 function operate(op) {
+  //if (operator != null) {
+
+  //} else
   document.getElementById("second-screen").innerHTML = `${display}`;
   document.getElementById("screen").innerHTML = ``;
   numbersArray2 = numbersArray;
   numbersArray = [];
   operator = op;
+
 }
 
-function equals() {
+function math() {
   if (numbersArray.length > 0 && numbersArray2.length > 0) {
     let num1 = parseInt(numbersArray.join(""));
     let num2 = parseInt(numbersArray2.join(""));
@@ -66,22 +82,19 @@ function equals() {
         break;
     }
     document.getElementById("screen").innerHTML = answer.toFixed(2);
-    document.getElementById("second-screen").innerHTML = ``;
-    numbersArray = [];
-    numbersArray2 = [];
-    operator = 0;
   } else {
    blank();
   }
 }
 
-function equals() {
+function test() {
   document.getElementById("second-screen").innerHTML = ``;
   numbersArray = [];
   numbersArray2 = [];
-  operator = 0;
+  operator = null;
   answer = 0;
 }
+
 
 function blank() {
   document.getElementById("second-screen").innerHTML = ``;
