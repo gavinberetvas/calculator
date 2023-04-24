@@ -5,11 +5,35 @@
   border: 1px solid black;
 }
 
+body {
+  max-width: 320px;
+  margin: auto;
+}
+
+.buttons {
+  padding: .38rem;
+  display: flex;
+  gap: 1rem;
+  max-width: 330px;
+  height: 300px;
+  flex-wrap: wrap;
+  
+}
+
+.button {
+  width: 90px;
+  height: 30px;
+}
+
 h1 {
   color: blue;
   height: 50px;
+  text-align: right;
+  padding-right: 1.5rem;
 }
 h3 {
   height: 20px;
+  padding-right: 1.5rem;
+  text-align: right;
 }
 

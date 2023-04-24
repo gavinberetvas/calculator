@@ -56,7 +56,7 @@ document.getElementById("button-3").addEventListener("click", function () {
       });
     
   
-
+//TODO MAKE OPERATE FUNCTION WORK WHEN NUMBERS ARRAY 2 IS FILLED TO CHAIN FUNCTIONS
 document.getElementById("plus").addEventListener("click", function () {
     operator == 0 ? operate("plus") : undefined;
 });
@@ -88,19 +88,19 @@ function equals() {
       switch (operator) {
         case "plus":
           document.getElementById("screen").innerHTML =
-            (parseInt(numbersArray.join("")) + parseInt(numbersArray2.join(""))).toFixed(4);
+            (parseInt(numbersArray.join("")) + parseInt(numbersArray2.join(""))).toFixed(2);
           break;
         case "minus":
           document.getElementById("screen").innerHTML =
-            (parseInt(numbersArray2.join("")) - parseInt(numbersArray.join(""))).toFixed(4);
+            (parseInt(numbersArray2.join("")) - parseInt(numbersArray.join(""))).toFixed(2);
           break;
         case "times":
           document.getElementById("screen").innerHTML =
-            (parseInt(numbersArray2.join("")) * parseInt(numbersArray.join(""))).toFixed(4);
+            (parseInt(numbersArray2.join("")) * parseInt(numbersArray.join(""))).toFixed(2);
           break;
         case "div":
           document.getElementById("screen").innerHTML =
-            (parseInt(numbersArray2.join("")) / parseInt(numbersArray.join(""))).toFixed(4);
+            (parseInt(numbersArray2.join("")) / parseInt(numbersArray.join(""))).toFixed(2);
           break;
       }
   
@@ -109,7 +109,11 @@ function equals() {
       numbersArray2 = [];
       operator = 0;
     } else {
-      return 1;
+        document.getElementById("second-screen").innerHTML = ``;
+        document.getElementById("screen").innerHTML = `0`;
+        numbersArray = [];
+        numbersArray2 = [];
+        operator = 0;
     }
   }
 
