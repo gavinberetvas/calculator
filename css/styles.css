@@ -11,13 +11,12 @@ body {
 }
 
 .buttons {
-  padding: .38rem;
+  padding: 0.38rem;
   display: flex;
   gap: 1rem;
   max-width: 330px;
   height: 300px;
   flex-wrap: wrap;
-  
 }
 
 .button {
@@ -36,4 +35,3 @@ h3 {
   padding-right: 1.5rem;
   text-align: right;
 }
-
