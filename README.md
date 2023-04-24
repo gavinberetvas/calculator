@@ -35,6 +35,10 @@ on clicking equal sign:
 }
 
 
+document.getElementById("button-0").addEventListener("click", function () {
+  addToNumbersArray(0);
+});
+
 document.getElementById("button-1").addEventListener("click", function () {
   addToNumbersArray(1);
 });
@@ -44,9 +48,29 @@ document.getElementById("button-2").addEventListener("click", function () {
 });
 
 document.getElementById("button-3").addEventListener("click", function () {
-    addToNumbersArray(3);
-  });
-  
-  document.getElementById("button-4").addEventListener("click", function () {
-    addToNumbersArray(4);
-  });
+  addToNumbersArray(3);
+});
+
+document.getElementById("button-4").addEventListener("click", function () {
+  addToNumbersArray(4);
+});
+
+document.getElementById("button-5").addEventListener("click", function () {
+  addToNumbersArray(5);
+});
+
+document.getElementById("button-6").addEventListener("click", function () {
+  addToNumbersArray(6);
+});
+
+document.getElementById("button-7").addEventListener("click", function () {
+  addToNumbersArray(7);
+});
+
+document.getElementById("button-8").addEventListener("click", function () {
+  addToNumbersArray(8);
+});
+
+document.getElementById("button-9").addEventListener("click", function () {
+  addToNumbersArray(9);
+});
