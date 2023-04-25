@@ -18,7 +18,16 @@ for (let i = 0; i < 10; i++) {
 
 document.getElementById("equals").addEventListener("click", function () {
   math();
+
   test();
+  //alert(`${answer}`);
+});
+
+document.getElementById("negate").addEventListener("click", function () {
+  let num1 = parseInt(numbersArray.join(""));
+  if  (num1 > 0) {
+    document.getElementById("screen").innerHTML = `${num1 - num1 - num1}`;
+  }
 });
 
 document.getElementById("plus").addEventListener("click", function () {
@@ -114,8 +123,8 @@ function test() {
   document.getElementById("second-screen").innerHTML = ``;
   numbersArray = [];
   numbersArray2 = [];
-  operator = null;
-  answer = 0;
+  //operator = null;
+  //answer = 0;
 }
 
 function blank() {
