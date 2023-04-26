@@ -9,26 +9,35 @@
     <script src="js/app.js" defer></script>
   </head>
   <body>
-    <h3 id="second-screen"></h3>
-    <h1 id="screen">Hello</h1>
-    <div class="buttons">
-        <button class="button num" id="button-0">0</button>
+    <div class="calculator">
+      <div class="display">
+        <div class="screen-wrapper">
+          <h3 id="second-screen"></h3>
+          <h1 id="screen"></h1>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="button toprow" id="clear">AC</button>
+        <button class="button toprow" id="delete">DEL</button>
+        <button class="button toprow" id="percent">%</button>
+        <button class="button operator" id="negate">+/-</button>
         <button class="button num" id="button-1">1</button>
         <button class="button num" id="button-2">2</button>
         <button class="button num" id="button-3">3</button>
+        <button class="button operator" id="plus">+</button>
         <button class="button num" id="button-4">4</button>
         <button class="button num" id="button-5">5</button>
         <button class="button num" id="button-6">6</button>
+        <button class="button operator" id="minus">-</button>
         <button class="button num" id="button-7">7</button>
         <button class="button num" id="button-8">8</button>
         <button class="button num" id="button-9">9</button>
-        <button class="button" id="plus">+</button>
-        <button class="button" id="minus">-</button>
-        <button class="button" id="times">x</button>
-        <button class="button" id="div">/</button>
-        <button class="button" id="dog">+/-</button>
-        <button class="button" id="" onclick="negate()">+/-</button>
+        <button class="button operator" id="times">x</button>
         <button class="button" id="equals">=</button>
-    </ class="buttons">
+        <button class="button num" id="button-0">0</button>
+        <button class="button" id="decimal">.</button>
+        <button class="button operator" id="div">÷</button>
+      </div>
+    </div>
   </body>
 </html>
