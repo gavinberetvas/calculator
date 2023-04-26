@@ -44,6 +44,7 @@ document.getElementById("equals").addEventListener("click", function () {
 });
 
 document.getElementById("plus").addEventListener("click", function () {
+  reset = false;
   if (displayValue != "" && previousValue != "") {
     math();
     operator = "plus";
@@ -56,6 +57,7 @@ document.getElementById("plus").addEventListener("click", function () {
 });
 
 document.getElementById("minus").addEventListener("click", function () {
+  reset = false;
   if (displayValue != "" && previousValue != "") {
     math();
     operator = "minus";
@@ -68,6 +70,7 @@ document.getElementById("minus").addEventListener("click", function () {
 });
 
 document.getElementById("div").addEventListener("click", function () {
+  reset = false;
   if (displayValue != "" && previousValue != "") {
     math();
     operator = "div";
@@ -80,6 +83,7 @@ document.getElementById("div").addEventListener("click", function () {
 });
 
 document.getElementById("times").addEventListener("click", function () {
+  reset = false;
   if (displayValue != "" && previousValue != "") {
     math();
     operator = "times";

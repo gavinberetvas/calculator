@@ -44,51 +44,19 @@ document.getElementById("equals").addEventListener("click", function () {
 });
 
 document.getElementById("plus").addEventListener("click", function () {
-  if (displayValue != "" && previousValue != "") {
-    math();
-    operator = "plus";
-  }
-  operator = "plus";
-  previousValue = displayValue;
-  document.getElementById("second-screen").innerHTML = previousValue;
-  displayValue = "";
-  document.getElementById("screen").innerHTML = displayValue;
+  setOperator("plus");
 });
 
 document.getElementById("minus").addEventListener("click", function () {
-  if (displayValue != "" && previousValue != "") {
-    math();
-    operator = "minus";
-  }
-  operator = "minus";
-  previousValue = displayValue;
-  document.getElementById("second-screen").innerHTML = previousValue;
-  displayValue = "";
-  document.getElementById("screen").innerHTML = displayValue;
+  setOperator("minus");
 });
 
 document.getElementById("div").addEventListener("click", function () {
-  if (displayValue != "" && previousValue != "") {
-    math();
-    operator = "div";
-  }
-  operator = "div";
-  previousValue = displayValue;
-  document.getElementById("second-screen").innerHTML = previousValue;
-  displayValue = "";
-  document.getElementById("screen").innerHTML = displayValue;
+  setOperator("div");
 });
 
 document.getElementById("times").addEventListener("click", function () {
-  if (displayValue != "" && previousValue != "") {
-    math();
-    operator = "times";
-  }
-  operator = "times";
-  previousValue = displayValue;
-  document.getElementById("second-screen").innerHTML = previousValue;
-  displayValue = "";
-  document.getElementById("screen").innerHTML = displayValue;
+  setOperator("times");
 });
 
 function math() {
@@ -142,4 +110,17 @@ function negate() {
     displayValue = displayValue - displayValue * 2;
     document.getElementById("screen").innerHTML = displayValue;
   }
+}
+
+function setOperator(op) {
+  reset = false;
+  if (displayValue != "" && previousValue != "") {
+    math();
+    operator = op;
+  }
+  operator = op;
+  previousValue = displayValue;
+  document.getElementById("second-screen").innerHTML = previousValue;
+  displayValue = "";
+  document.getElementById("screen").innerHTML = displayValue;
 }
