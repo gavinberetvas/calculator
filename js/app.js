@@ -43,29 +43,8 @@ document.getElementById("equals").addEventListener("click", function () {
   }
 });
 
-// document.getElementById("plus").addEventListener("click", function () {
-//   setOperator("plus");
-// });
-
-// document.getElementById("minus").addEventListener("click", function () {
-//   setOperator("minus");
-// });
-
-// document.getElementById("div").addEventListener("click", function () {
-//   setOperator("div");
-// });
-
-// document.getElementById("times").addEventListener("click", function () {
-//   setOperator("times");
-// });
-
-
-// the former code was redundant.
-// by using a .foreach array method with the names of each operator,
-// I can make the code more DRY.
-
-["plus", "minus", "div", "times"].forEach(function(operator) {
-  document.getElementById(operator).addEventListener("click", function() {
+["plus", "minus", "div", "times"].forEach(function (operator) {
+  document.getElementById(operator).addEventListener("click", function () {
     setOperator(operator);
   });
 });
