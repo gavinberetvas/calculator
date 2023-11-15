@@ -8,7 +8,7 @@
 ## Summary 
 
 
-This was the final assignment in the Odin Project's [Foundations course.](https://www.theodinproject.com/lessons/foundations-calculator)
+This is the final assignment in the Odin Project's [Foundations course.](https://www.theodinproject.com/lessons/foundations-calculator)
 
 Coded in HTML5, CSS3, and Vanilla JS/ES6. 
 
