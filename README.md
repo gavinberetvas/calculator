@@ -5,14 +5,14 @@
 
 [Try it out for yourself!](https://gavinberetvas.github.io/calculator/)   :point_left:
 
-### Summary 
+## Summary 
 
 
 This was the final assignment in the Odin Project's [Foundations course.](https://www.theodinproject.com/lessons/foundations-calculator)
 
 Coded in HTML5, CSS3, and Vanilla JS/ES6. 
 
-### Features
+## Features
 
 
 * All basic arithmetic calculations enabled.
@@ -26,7 +26,7 @@ Coded in HTML5, CSS3, and Vanilla JS/ES6.
 * Reset the calculator by single-clicking the **[AC]** button. 
 * Pressing **[ = ]** twice resets the memory ( same as **[AC]** ).
 
-### License
+## License
 
 * [MIT License](https://opensource.org/license/mit/)
 * Copyright © 2023 Gavin Beretvas
