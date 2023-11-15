@@ -24,7 +24,7 @@ Coded in HTML5, CSS3, and Vanilla JS/ES6.
 (note: Calculator automatically rounds to two decimal points.)
 * Create a percentage value to two decimal places using **[ % ]**.
 * Reset the calculator by single-clicking the **[AC]** button. 
-* Pressing **[ = ]** twice resets the memory ( same as **[AC]** ).
+* Double-clicking **[ = ]** resets the calculator's memory ( same as **[AC]** ).
 
 ## License
 
