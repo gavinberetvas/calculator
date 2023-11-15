@@ -1,18 +1,19 @@
 ## Calculator
-***
+
 
 ![Calculator Gif](calculator_gif.gif)
+
 [Try it out for yourself!](https://gavinberetvas.github.io/calculator/)   :point_left:
 
 ### Summary 
-***
+
 
 This was the final assignment in the Odin Project's [Foundations course.](https://www.theodinproject.com/lessons/foundations-calculator)
 
 Coded in HTML5, CSS3, and Vanilla JS/ES6. 
 
 ### Features
-***
+
 
 * All basic arithmetic calculations enabled.
 * Swap between a negative and positive number with **[+/-]**.
@@ -26,7 +27,7 @@ Coded in HTML5, CSS3, and Vanilla JS/ES6.
 * Pressing **[ = ]** twice resets the memory ( same as **[AC]** ).
 
 ### License
-***
+
 * [MIT License](https://opensource.org/license/mit/)
 * Copyright © 2023 Gavin Beretvas
 
